@@ -1,13 +1,14 @@
+                                /* -------------PAGINA PRINCIPAL-------------*/
 /* -- altura -- */
-html, body .capa{
+html, body, .capa{
     height: 100%;
 }
 
 /* -- background da pagina, com imagem fixada, edição de fundo, com cor e degrade, e formatação de texto da pagina*/
 body { 
- background: url('imagens/capa.png'), 
-             url('imagens/ruido.png'), 
-             linear-gradient(50deg, #ff4169, #7c26f8);
+ background: 
+ url('imagens/ruido.png'), 
+ linear-gradient(50deg, #ff9696, #863e7480);
  background-attachment: fixed;
  font-family: Helvetica, arial, sans-serif;
 
@@ -16,123 +17,89 @@ body {
  
 }
 
-/* -- BARRA DE NAVEGAÇÃO -- */
+/* -------------------- BARRA DE NAVEGAÇÃO COM IMPORTAÇÃO DE LOGO E TRANSPARENCIA DA ABA ------------------- */
 .img-logo{
-    height:40px;
-    width:132px;
+    height:42px;
+    width:134px;
     display: block;
-    background:url(imagens/spotify.svg) no-repeat;
+    background:url(imagens/logo-header.svg) no-repeat;
     background-size: contain ; 
-    color: transparent;
 }
 
-/* -- tamanho e cor da navbar(barra de navegação) -- */
+/* -- edição no tamanho e cor da navbar -- */
 nav.navbar-transparente {
+    background: rgb(255, 139, 139);
     padding: 15px 0px;
-    background: rgba(0, 0, 0, 0.6);
     border: none;
 
 }
 
 
-/* -- sentralização da logo spotify -- */
+/* -- sentralização da logo -- */
 .navbar-brand{
     padding: 5px;
 
 }
 
-/* --deivisor entre baixar e escrever-se -- */
-.divisor{
-    width: 1px;
-    height: 16px;
-    background: white;
-    margin: 16px 10px; 
-}
-
-/* -- alterar cor das palavras assim que o cursor estiver em cima -- */
-.navbar-inverse .navbar-nav>li>a {
-    color:white;
-}
-
-.navbar-inverse .navbar-nav>li>a:hover {
-    color:#9bf0e1;
-}
-
-/* -- imagem de capa da pagina -- */
-.capa {
-    display: table;
-    width: 100%; 
-}
-.texto-capa {
-    text-align: center;
+/* -- alterar cor das palavras assim que o cursor estiver em cima-- */
+.navbar-inverse .navbar-nav>li>a, footer .nav a{
     color: white;
-    display: table-cell;
-    vertical-align: middle;
 }
 
-/* -- botoes mudar de cor ao passar cursor e cima -- */
-.btn-custom {
-    color: white;
-    border-radius: 500px;
-    -webkit-border-radius: 500px;
-    -moz-border-radius: 500px ;
-    padding: 10px 35px;
-    margin: 0px 15px;
-    text-transform: uppercase;
-    transition: background 0.4s, color 0,5s;
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
+    color:#000000;
+    background: none;
 }
 
-.btn-roxo{
-    background: #7c25f8;
 
-}
-
-.btn-roxo:hover {
-    background: #6207e3;
-    color: white;
-
-}
-
-.btn-branco {
-    border: 2px solid white;
-    
-}
-.btn-branco:hover {
-    background-color: white;
-    color: black;
-    
-}
 /* -- seção de servicos -- */
+
 #servicos {
-    background: white;
-    padding-top: 20px;
+    background: rgb(39, 39, 39);
+    padding-top: 100px;
     padding-bottom: 20px;
+    background: non;
 }
 
-.albuns{
-    padding: 10px 0px 10px 0px;
-}
 /* -- recursos -- */
-#recursos {
-    padding-top: 20px;
+.recursos {
+    padding-top: 70px;
     padding-bottom: 20px;
     color: white;
 }
-/* -- edição no angulo das imagens dos iphones -- */
-.rotacionar{
-    transform: rotate(30deg);
-    -ms-transform: rotate(30deg);
-    -webkit-transform: rotate(30deg);
-    padding-left: 80px;
+
+
+/* ------------------------------------ EDIÇÃO DE COR E TAMANHO DO RODAPE -----------------------------------*/
+
+footer {
+    background: rgb(255, 139, 139);
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+.item-forma-de-pagamento{
+    float: left;
+}
+
+.img-rodape {
+    margin-top: 60%;
+    height:62px;
+    width:134px;
+    display: block;
+    background:url(imagens/Logo_Newsletter.png) no-repeat;
+    background-size: contain ; 
+    color: transparent;
+
 }
 
 /* -- formatação de texto da pagina -- */
 
 h1 {
-    font-size: 100px;
+    font-size: 50px;
     font-weight:800;
     letter-spacing: -0.05em;
-    margin-bottom: 50px;
+    margin-bottom: 420px;
+    color:rgb(255, 255, 255);
     }
 
 h2{
@@ -146,13 +113,76 @@ h3{
     font-weight: 700;
     letter-spacing: -0.04em;
 }
-/* -- formatação da cor do texto da area serviços -- */
-#servicos h2, #servicos h3 {
-    color: #7c25f8
+
+h5{
+    color:white;
+    
 }
-/* -- formatação da cor do texto buscar, navegar e descobrir -- */
-#recursos h3 {
-    color: #9bf0e1
+p{
+    color: white;
 }
 
+#rodape h4{
+    color: #802e2e;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+/* -- formatação da cor do texto da pagina home, pagina de compra do produto e pagina de cadastro -- */
+#servicos h2, #servicos h3 {
+    color: #eeeeee
+}
+
+/* -- formatação do botão comprar do produto da pagina home e da pagina de compra do produto-- */
+.btn-comprar {
+    width: 240px;
+    height: 50px;
+    color: black;
+    border-radius: 10px;
+    padding-top: 12px;
+    margin-right: 10px;
+    margin-left: 9px ;
+    
+}
+
+.icon-button{
+    height:22px;
+    width:134px;
+     background-size: contain ;
+     margin-right: 30px;
+     margin-left: -40px;
+
+}
+
+.imagem-produto-responsivo{
+    
+    background-size:100%;
+    
+
+
+/*------------------------------------PAGINAS DE COMPRA DOS PRODUTO----------------------------------------*/
+div.tres {
+    /*-- borda de fundo da imagame do produto  --*/
+    line-height:100px;
+    width:80px;
+    height:80px;
+    border-style: solid;
+    border-color: rgb(29, 29, 29);
+    border-width: 26px 260px 245px 30px;
+    margin-top: 20px;
+    }
+    /*-- bloco de codigo nao esta sendo usado  --*/
+
+/* -- --------------------------------------------PAGINA CADASTRO------------------------------------------ */
+
+.produto1{
+    margin-left: 450px ;
+
+}
+
+.text-produto1{
+    margin-right: 12px;
+                                    
+ }
 
